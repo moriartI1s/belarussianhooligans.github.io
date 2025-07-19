@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стильный форум</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="forum-header">
+            <div class="logo">
+                <i class="fas fa-comments"></i>
+                <h1>Обсуждения</h1>
+            </div>
+            <nav class="main-nav">
+                <a href="#" class="active">Главная</a>
+                <a href="#">Категории</a>
+                <a href="#">Популярное</a>
+                <a href="#">О нас</a>
+            </nav>
+            <div class="user-actions">
+                <button class="btn login-btn">Войти</button>
+                <button class="btn register-btn">Регистрация</button>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="sidebar">
+                <div class="sidebar-section">
+                    <h3>Категории</h3>
+                    <ul class="category-list">
+                        <li><a href="#"><i class="fas fa-code"></i> Программирование</a></li>
+                        <li><a href="#"><i class="fas fa-paint-brush"></i> Дизайн</a></li>
+                        <li><a href="#"><i class="fas fa-chart-line"></i> Бизнес</a></li>
+                        <li><a href="#"><i class="fas fa-gamepad"></i> Игры</a></li>
+                        <li><a href="#"><i class="fas fa-utensils"></i> Кулинария</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar-section">
+                    <h3>Онлайн</h3>
+                    <div class="online-users">
+                        <span class="online-count">245</span> пользователей
+                    </div>
+                </div>
+            </aside>
+
+            <main class="main-content">
+                <div class="create-post">
+                    <div class="user-avatar">
+                        <img src="https://via.placeholder.com/50" alt="Аватар">
+                    </div>
+                    <form class="post-form">
+                        <textarea placeholder="Что у вас нового?" rows="3"></textarea>
+                        <div class="form-actions">
+                            <div class="attachment-options">
+                                <button type="button" class="icon-btn"><i class="fas fa-image"></i></button>
+                                <button type="button" class="icon-btn"><i class="fas fa-link"></i></button>
+                                <button type="button" class="icon-btn"><i class="fas fa-video"></i></button>
+                            </div>
+                            <button type="submit" class="btn post-btn">Опубликовать</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="posts-container">
+                    <div class="post">
+                        <div class="post-header">
+                            <div class="user-info">
+                                <img src="https://via.placeholder.com/40" alt="Аватар" class="user-avatar">
+                                <div class="user-details">
+                                    <span class="username">Алексей Петров</span>
+                                    <span class="post-time">2 часа назад</span>
+                                </div>
+                            </div>
+                            <div class="post-actions">
+                                <button class="icon-btn"><i class="fas fa-ellipsis-h"></i></button>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <p>Привет всем! Я только что закончил свой новый проект на React. Кто-нибудь хочет посмотреть код и дать обратную связь?</p>
+                        </div>
+                        <div class="post-footer">
+                            <button class="like-btn"><i class="far fa-thumbs-up"></i> 24</button>
+                            <button class="comment-btn"><i class="far fa-comment"></i> 8</button>
+                            <button class="share-btn"><i class="fas fa-share"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <div class="post-header">
+                            <div class="user-info">
+                                <img src="https://via.placeholder.com/40" alt="Аватар" class="user-avatar">
+                                <div class="user-details">
+                                    <span class="username">Мария Иванова</span>
+                                    <span class="post-time">5 часов назад</span>
+                                </div>
+                            </div>
+                            <div class="post-actions">
+                                <button class="icon-btn"><i class="fas fa-ellipsis-h"></i></button>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <p>Ищу рекомендации по хорошим курсам по веб-дизайну. Что посоветуете для начинающего?</p>
+                            <div class="post-image">
+                                <img src="https://via.placeholder.com/600x300" alt="Пример изображения">
+                            </div>
+                        </div>
+                        <div class="post-footer">
+                            <button class="like-btn"><i class="far fa-thumbs-up"></i> 42</button>
+                            <button class="comment-btn"><i class="far fa-comment"></i> 15</button>
+                            <button class="share-btn"><i class="fas fa-share"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
